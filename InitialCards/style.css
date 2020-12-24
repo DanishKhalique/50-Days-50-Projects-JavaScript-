@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+body{
+    background-color: black
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    width: 90%;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.cards {
+    width: 20vh;
+    height: 80vh;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 5px;
+    transition: width 0.7s ease-in-out ;
+
+}
+
+img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    position: relative;
+}
+
+h2 {
+    position: absolute;
+    bottom: 70px;
+    color: white;
+    opacity: 0;
+    font-size: 24;
+    margin-left: 30px;
+}
+
+
+.cards.active{
+    width: 90vh; 
+
+}
+
+.cards.active h2 {
+    opacity: 1;
+    transition: 0.3s ease-in 0.4 ;
+}
+
+
+@media(max-width: 480px){
+
+}
