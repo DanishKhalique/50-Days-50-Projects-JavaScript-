@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.904);
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    align-self: flex-start;
+    background: #ff7979;
+    left: -100px;
+    top: -100px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+}
+
+nav>img {
+    width: 45px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 16px;
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    cursor: pointer;
+}
+
+nav > img#close {
+    left: 25px;
+}
+
+.container.container.show-nav nav{
+    transform: rotate(-70deg);
+    transition-delay: 0.44s;
+}
+
+
+
+.wrapper {
+    padding: 50px 0px;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(white, whitesmoke, #ff7979);
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    max-width: 1000px;
+
+}
+
+.container.show-nav {
+    transform: rotate(-20deg);
+
+}
+
+.container.show-nav+.navbar>ul>li {
+    transform: translateX(0);
+    transition-delay: 0.3s;
+
+}
+
+.wrapper>p {
+    margin-top: 12px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 40px 0;
+}
+
+
+.content>img {
+    height: 500px;
+    max-width: 100%;
+    align-self: center;
+    margin: 21px 0px;
+
+}
+
+
+.navbar {
+    color: white;
+    width: auto;
+    bottom: 10px;
+    position: fixed;
+    margin: 3px;
+    left: 0;
+    z-index: 100;
+
+}
+
+.navbar>ul>li {
+    list-style-type: none;
+    padding-left: 30px;
+    text-transform: uppercase;
+    margin: 40px 0;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: transform 0.4s ease-in;
+    transform: translateX(-100%);
+
+
+
+}
+
+.navbar>ul>li+li {
+    margin-left: 15px;
+    transform: translateX(-150%);
+
+}
+
+.navbar>ul>li+li+li {
+    margin-left: 30px;
+    transform: translateX(-200%);
+
+}
