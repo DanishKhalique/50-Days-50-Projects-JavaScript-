@@ -10,8 +10,8 @@ function nextPress() {
         if (counter < 3) {
             counter++;
           // prev.removeAttribute("disabled");
-            check();
-            circle[counter].classList.add("active");
+          circle[counter].classList.add("active");
+          check();
             let count = counter * 30;
             progress.style.width = count + "%";
 console.log(circle[counter])
@@ -27,8 +27,8 @@ function prevPress() {
         if (counter > 0) {
             counter--;
            // next.removeAttribute("disabled");
-            check();
             circle[counter+1].classList.remove("active");
+            check();
             
             let count = counter * 30;
             progress.style.width = count + "%";
@@ -37,16 +37,18 @@ function prevPress() {
     });
 }
 
-// function check() {
-//     if (circle[counter] === 0) {
-//         prev.disabled = true
-//     } else if (circle[counter] === 4) {
-//         next.disabled = true;
-//     } else{
-//         prev.disabled = false;
-//         next.disabled = false
-//     }
-// }
+ function check() {
+     if (counter === 0) {
+         prev.disabled = true
+     } else if (counter === 3) {
+         next.disabled = true;
+     } else{
+         prev.disabled = false;
+         next.disabled = false
+     }
+ }
 
 nextPress();
 prevPress();
+// check();
+
