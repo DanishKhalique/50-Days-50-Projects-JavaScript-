@@ -14,21 +14,25 @@
             <h2>Register With Us</h2>
             <div class="inputs">
                 <label for="username">Username</label>
-                    <input placeholder="Enter username" type="text" name="username" id="username">      
+                    <input placeholder="Enter username" type="text" name="username" id="username">
+                    <h6>*Username must be at least 3 characters</h6> 
             </div>
             <div class="inputs">
                 <label for="email">Email</label>
-                    <input placeholder="Enter email" type="text" name="username" id="email">      
+                    <input placeholder="Enter email" type="email" name="username" id="email">
+                    <h6>*Email is not valid</h6>       
             </div>
             <div class="inputs">
                 <label for="password">Password</label>
-                    <input placeholder="Enter password" type="text" name="username" id="password">      
+                    <input placeholder="Enter password" type="password" name="username" id="password"> 
+                    <h6>*Password must be atleast 6 characters</h6>      
             </div>
             <div class="inputs">
                 <label for="passwordAgain">Confirm Password</label>
-                    <input placeholder="Enter password again" type="text" name="password" id="passwordAgain">      
+                    <input placeholder="Enter password again" type="password" name="password" id="passwordAgain"> 
+                    <h6 id="pass2">*Password2 is required</h6>      
             </div>
-            <button class="submit">Submit</button>
+            <button id="submit">Submit</button>
         </div>
     </div>
 
