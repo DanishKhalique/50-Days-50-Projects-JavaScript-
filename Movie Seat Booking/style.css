@@ -1,5 +1,141 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: default;
+}
+
+body {
+    background-color: rgb(1, 11, 22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: none;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.movie_detail {
+    display: flex;
+    color: white;
+    width: auto;
+    align-items: center;
+
+
+}
+
+.movie_detail>select {
+    margin-left: 20px;
+    background-color: white;
+    color: rgb(24, 21, 21);
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px 13px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seat_symbol {
+    display: flex;
+    color: whitesmoke;
+    width: 300px;
+    padding: 4px;
+    justify-content: space-around;
+    background-color: rgb(9, 11, 27);
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.symbol {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.seat {
+    border: 10px solid rgba(211, 211, 211, .3);
+    border-bottom: none;
+    border-top-left-radius: 175px;
+    border-top-right-radius: 175px;
+    margin: 3px;
+    padding: 1px;
+}
+
+.row>.seat {
+    cursor: pointer;
+}
+
+.row>.seat:nth-of-type(2) {
+    margin-right: 17px;
+}
+
+.row>.seat:nth-last-of-type(2) {
+    margin-left: 17px;
+}
+
+.row>.seat:hover {
+    transform: scale(1.25);
+}
+
+
+.seat.selected {
+    background-color: aqua;
+}
+
+
+.seat.occupied {
+    background-color: #fFfF;
+}
+
+.seat.occupied:hover {
+    transform: scale(1);
+    cursor: default;
+}
+
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.symbol p {
+    margin-left: 5px;
+    font-size: 12px;
+    color:  rgba(211, 211, 211, .3);
+}
+
+.cinema_layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    perspective: 700px;
+}
+
+.screen {
+    background-color: rgb(240, 228, 228);
+    border-color: rgb(240, 228, 228);
+    width: 100%;
+    border-radius: 2px;
+    height: 80px;
+    box-shadow: 0px 3px 10px #f3f1f1;
+    transform: rotateX(-40deg);
+    margin-bottom: 40px;
+}
+
+.details {
+    color: whitesmoke
+}
+
+span {
+    color: chartreuse;
 }
