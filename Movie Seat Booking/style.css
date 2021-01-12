@@ -53,6 +53,7 @@ body {
     background-color: rgb(9, 11, 27);
     border-radius: 4px;
     font-size: 13px;
+    margin-bottom: -25px;
 }
 
 .symbol {
@@ -111,7 +112,7 @@ body {
 .symbol p {
     margin-left: 5px;
     font-size: 12px;
-    color:  rgba(211, 211, 211, .3);
+    color: rgba(211, 211, 211, .3);
 }
 
 .cinema_layout {
